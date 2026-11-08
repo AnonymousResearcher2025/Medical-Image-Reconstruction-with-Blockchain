@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shield-reconstruction"
+version = "0.1.0"
+description = "Research implementation of SHIELD reconstruction, identity vectors, and signed provenance"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "numpy>=1.24", "Pillow>=10", "cryptography>=41", "PyYAML>=6"]
+
+[project.optional-dependencies]
+medical = ["nibabel>=5.1"]
+mpi = ["mpi4py>=3.1"]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[project.scripts]
+shield = "shield.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["shield*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
