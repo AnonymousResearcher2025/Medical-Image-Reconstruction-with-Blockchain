@@ -1,0 +1,56 @@
+{
+  "model_hash": "24fa816fadc4471b30ea4ab560f61f5e4f950b13c9c5958912a500ecceb4d9af",
+  "results": [
+    {
+      "sigma": 0.0,
+      "mask_fraction": 0.0,
+      "rank1": 0.8333333333333334,
+      "roc_auc": 0.9305555555555556,
+      "queries": 6,
+      "patients": 3,
+      "embedding_cosine": 0.9999285240968069,
+      "psnr_db": 46.54617594761864,
+      "ssim": 0.9976305365562439
+    },
+    {
+      "sigma": 0.02,
+      "mask_fraction": 0.0,
+      "rank1": 1.0,
+      "roc_auc": 1.0,
+      "queries": 6,
+      "patients": 3,
+      "embedding_cosine": 0.998717854420344,
+      "psnr_db": 33.8690466928439,
+      "ssim": 0.8975452383359274
+    },
+    {
+      "sigma": 0.05,
+      "mask_fraction": 0.0,
+      "rank1": 0.6666666666666666,
+      "roc_auc": 0.8472222222222222,
+      "queries": 6,
+      "patients": 3,
+      "embedding_cosine": 0.9975715974966685,
+      "psnr_db": 26.608322880271455,
+      "ssim": 0.6712754368782043
+    },
+    {
+      "sigma": 0.1,
+      "mask_fraction": 0.0,
+      "rank1": 0.6666666666666666,
+      "roc_auc": 0.8333333333333334,
+      "queries": 6,
+      "patients": 3,
+      "embedding_cosine": 0.9964189231395721,
+      "psnr_db": 21.229573275437456,
+      "ssim": 0.43134760359923047
+    }
+  ],
+  "ledger": {
+    "valid": true,
+    "blocks": 53,
+    "head": "552e7120db515e54667c0f013a1b72253d1e95fcdcaf8d374a239c8f0e1fb311",
+    "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+    "manifest_pinned": true
+  }
+}

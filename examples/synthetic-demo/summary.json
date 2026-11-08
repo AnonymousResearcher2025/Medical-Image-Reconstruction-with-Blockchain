@@ -1,0 +1,225 @@
+{
+  "data": "synthetic_only",
+  "centralized": {
+    "model_hash": "24fa816fadc4471b30ea4ab560f61f5e4f950b13c9c5958912a500ecceb4d9af",
+    "history": [
+      {
+        "epoch": 1,
+        "training": {
+          "pixel": 0.037646034732460976,
+          "ssim": 0.3424643278121948,
+          "semantic": 0.07212178781628609,
+          "classification": 1.3899239301681519,
+          "embedding": 0.038588814437389374,
+          "triplet": 0.21900685131549835,
+          "total": 23.139588356018066
+        },
+        "validation": {
+          "psnr_db": 26.431687625142697,
+          "ssim": 0.7029231985410055
+        },
+        "proof": {
+          "block_hash": "8017b42f9215cac86b5386d067c125e6a5c554ac361dee04c883ff9b679c6748",
+          "height": 0,
+          "timestamp_ns": 1794061154259829000,
+          "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+          "signatures": 8,
+          "certificate_bytes": 1579
+        }
+      },
+      {
+        "epoch": 2,
+        "training": {
+          "pixel": 0.03809212148189545,
+          "ssim": 0.32913312315940857,
+          "semantic": 0.014545703306794167,
+          "classification": 1.38612300157547,
+          "embedding": 0.008984647691249847,
+          "triplet": 0.17167134582996368,
+          "total": 22.53506088256836
+        },
+        "validation": {
+          "psnr_db": 26.421606228527327,
+          "ssim": 0.7026377518971761
+        },
+        "proof": {
+          "block_hash": "1da09e51b3ec2c34364afadcc39045fdd6e71904b6b60fc59b4352716d9e9444",
+          "height": 1,
+          "timestamp_ns": 1794061154339307000,
+          "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+          "signatures": 8,
+          "certificate_bytes": 1579
+        }
+      }
+    ],
+    "ledger": {
+      "valid": true,
+      "blocks": 2,
+      "head": "1da09e51b3ec2c34364afadcc39045fdd6e71904b6b60fc59b4352716d9e9444",
+      "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+      "manifest_pinned": true
+    },
+    "parameters": 244101,
+    "data_counts": {
+      "train": 16,
+      "val": 3,
+      "enroll": 6,
+      "query": 6
+    }
+  },
+  "evaluation": {
+    "model_hash": "24fa816fadc4471b30ea4ab560f61f5e4f950b13c9c5958912a500ecceb4d9af",
+    "results": [
+      {
+        "sigma": 0.0,
+        "mask_fraction": 0.0,
+        "rank1": 0.8333333333333334,
+        "roc_auc": 0.9305555555555556,
+        "queries": 6,
+        "patients": 3,
+        "embedding_cosine": 0.9999285240968069,
+        "psnr_db": 46.54617594761864,
+        "ssim": 0.9976305365562439
+      },
+      {
+        "sigma": 0.02,
+        "mask_fraction": 0.0,
+        "rank1": 1.0,
+        "roc_auc": 1.0,
+        "queries": 6,
+        "patients": 3,
+        "embedding_cosine": 0.998717854420344,
+        "psnr_db": 33.8690466928439,
+        "ssim": 0.8975452383359274
+      },
+      {
+        "sigma": 0.05,
+        "mask_fraction": 0.0,
+        "rank1": 0.6666666666666666,
+        "roc_auc": 0.8472222222222222,
+        "queries": 6,
+        "patients": 3,
+        "embedding_cosine": 0.9975715974966685,
+        "psnr_db": 26.608322880271455,
+        "ssim": 0.6712754368782043
+      },
+      {
+        "sigma": 0.1,
+        "mask_fraction": 0.0,
+        "rank1": 0.6666666666666666,
+        "roc_auc": 0.8333333333333334,
+        "queries": 6,
+        "patients": 3,
+        "embedding_cosine": 0.9964189231395721,
+        "psnr_db": 21.229573275437456,
+        "ssim": 0.43134760359923047
+      }
+    ],
+    "ledger": {
+      "valid": true,
+      "blocks": 53,
+      "head": "552e7120db515e54667c0f013a1b72253d1e95fcdcaf8d374a239c8f0e1fb311",
+      "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+      "manifest_pinned": true
+    }
+  },
+  "federated": {
+    "model_hash": "1dfe5d215a49c4cd6db5cec5333546fadfd377c6edf9bd7ca6b4ef46c03baf3c",
+    "history": [
+      {
+        "round": 1,
+        "clients": [
+          {
+            "pixel": 0.03853222355246544,
+            "ssim": 0.3039929270744324,
+            "semantic": 0.0993034616112709,
+            "classification": 1.3880506753921509,
+            "embedding": 0.05401746556162834,
+            "triplet": 0.11231381446123123,
+            "total": 22.678020477294922
+          },
+          {
+            "pixel": 0.03760785609483719,
+            "ssim": 0.32687172293663025,
+            "semantic": 0.09521057456731796,
+            "classification": 1.3750717639923096,
+            "embedding": 0.053138901479542255,
+            "triplet": 0.14296315610408783,
+            "total": 22.652385711669922
+          }
+        ],
+        "validation": {
+          "psnr_db": 26.43565829940643,
+          "ssim": 0.7028805017471313
+        },
+        "proof": {
+          "block_hash": "42ab8e1aab97495bfd84158d4fd40b1267ca53689ad1ef5e95044ac505fc5b29",
+          "height": 0,
+          "timestamp_ns": 1794061155173232000,
+          "manifest_hash": "f8db3db58ab9e80d27deefd1cc134dac8d7d65d7771761d606b4ac96c76b801b",
+          "signatures": 8,
+          "certificate_bytes": 1755
+        },
+        "communication": {
+          "mode": "simulated_dense_fp32_payloads_not_network_measurement",
+          "client_upload_bytes": 1952808,
+          "anchor_certificate_bytes": 1755
+        }
+      },
+      {
+        "round": 2,
+        "clients": [
+          {
+            "pixel": 0.037558261305093765,
+            "ssim": 0.40968161821365356,
+            "semantic": 0.054980888962745667,
+            "classification": 1.3828080892562866,
+            "embedding": 0.037234824150800705,
+            "triplet": 0.22401957213878632,
+            "total": 23.13006591796875
+          },
+          {
+            "pixel": 0.037963274866342545,
+            "ssim": 0.31638285517692566,
+            "semantic": 0.04215530585497618,
+            "classification": 1.3558586239814758,
+            "embedding": 0.029944956302642822,
+            "triplet": 0.17998453974723816,
+            "total": 22.297797203063965
+          }
+        ],
+        "validation": {
+          "psnr_db": 26.418729007610626,
+          "ssim": 0.7021987040837606
+        },
+        "proof": {
+          "block_hash": "becacefd461879736cc68cb1a1ad348b043674479d9ed35d51be3f1ebb38c07b",
+          "height": 1,
+          "timestamp_ns": 1794061155252350000,
+          "manifest_hash": "f8db3db58ab9e80d27deefd1cc134dac8d7d65d7771761d606b4ac96c76b801b",
+          "signatures": 8,
+          "certificate_bytes": 1755
+        },
+        "communication": {
+          "mode": "simulated_dense_fp32_payloads_not_network_measurement",
+          "client_upload_bytes": 1952808,
+          "anchor_certificate_bytes": 1755
+        }
+      }
+    ],
+    "ledger": {
+      "valid": true,
+      "blocks": 2,
+      "head": "becacefd461879736cc68cb1a1ad348b043674479d9ed35d51be3f1ebb38c07b",
+      "manifest_hash": "f8db3db58ab9e80d27deefd1cc134dac8d7d65d7771761d606b4ac96c76b801b",
+      "manifest_pinned": true
+    },
+    "parameters": 244101,
+    "data_counts": {
+      "train": 16,
+      "val": 3,
+      "enroll": 6,
+      "query": 6
+    }
+  }
+}

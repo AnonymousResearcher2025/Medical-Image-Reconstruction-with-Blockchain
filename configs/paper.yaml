@@ -1,0 +1,33 @@
+# Operational defaults based on Section IV-A. See PAPER_NOTES.md for gaps.
+seed: 0
+image_size: 256
+tile_size: 32
+embedding_dim: 256
+base_channels: 64
+batch_size: 8
+tiles_per_image: 0  # all 64 shards; reduce to 4 for memory-constrained development
+inference_batch_size: 32
+sigma: 0.05
+mask_fraction: 0.0
+epochs: 50  # centralized epoch count unspecified; selected implementation default
+lr_reconstruction: 0.0001
+lr_identity: 0.00001
+device: auto
+threads: 2
+nodes: 20
+faults: 2
+placement: hilbert
+loss:
+  pixel: 8.0
+  ssim: 1.5
+  semantic: 1.0  # paper does not provide this lambda
+  classification: 15.0
+  embedding: 8.0
+  triplet: 5.0
+federated:
+  clients: 5
+  rounds: 50
+  local_epochs: 5
+  partition: iid  # or dirichlet, with alpha=0.5
+  alpha: 0.5
+  sample_weighted: false  # Algorithm 2 uses uniform client weights
