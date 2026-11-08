@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-07",
+  "python": "3.13.7",
+  "platform": "macOS-26.7.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "torch": "2.15.0",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "cryptography": "50.0.2",
+    "PyYAML": "6.0.3",
+    "pytest": "9.2.0",
+    "nibabel": "5.4.2",
+    "mpi4py": "4.1.2",
+    "mpich": "5.0.2",
+    "ruff": "0.17.4"
+  },
+  "tests": {
+    "passed": 20
+  },
+  "ledger": {
+    "valid": true,
+    "blocks": 68,
+    "head": "e807e8e76de441b14da32e2478cdce058cd5c8a095055c54f69f7ce904ef8f7c",
+    "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+    "manifest_pinned": true
+  },
+  "mixed_evaluation": [
+    {
+      "sigma": 0.05,
+      "mask_fraction": 0.15,
+      "rank1": 0.5,
+      "roc_auc": 0.6944444444444444,
+      "queries": 6,
+      "patients": 3,
+      "embedding_cosine": 0.9962996443112692,
+      "psnr_db": 16.787302555515684,
+      "ssim": 0.5022872189680735
+    }
+  ],
+  "local_benchmark": [
+    {
+      "nodes": 20,
+      "transactions": 10,
+      "fault": "byzantine",
+      "fault_rate": 0.1,
+      "commit_success": 1.0,
+      "mean_commit_ms": 6.805345806060359,
+      "mode": "single_process_serial_signing",
+      "ledger_bytes": 30530
+    },
+    {
+      "nodes": 50,
+      "transactions": 10,
+      "fault": "byzantine",
+      "fault_rate": 0.1,
+      "commit_success": 1.0,
+      "mean_commit_ms": 27.43205400183797,
+      "mode": "single_process_serial_signing",
+      "ledger_bytes": 72410
+    },
+    {
+      "nodes": 100,
+      "transactions": 10,
+      "fault": "byzantine",
+      "fault_rate": 0.1,
+      "commit_success": 1.0,
+      "mean_commit_ms": 49.373212398495525,
+      "mode": "single_process_serial_signing",
+      "ledger_bytes": 142210
+    }
+  ]
+}
