@@ -1,0 +1,23 @@
+{
+  "model_hash": "24fa816fadc4471b30ea4ab560f61f5e4f950b13c9c5958912a500ecceb4d9af",
+  "results": [
+    {
+      "sigma": 0.05,
+      "mask_fraction": 0.15,
+      "rank1": 0.5,
+      "roc_auc": 0.6944444444444444,
+      "queries": 6,
+      "patients": 3,
+      "embedding_cosine": 0.9962996443112692,
+      "psnr_db": 16.787302555515684,
+      "ssim": 0.5022872189680735
+    }
+  ],
+  "ledger": {
+    "valid": true,
+    "blocks": 68,
+    "head": "e807e8e76de441b14da32e2478cdce058cd5c8a095055c54f69f7ce904ef8f7c",
+    "manifest_hash": "8beb0cf954352b38c151bf6a732e7725b05d612d8ad01e935eda9692f64881c1",
+    "manifest_pinned": true
+  }
+}

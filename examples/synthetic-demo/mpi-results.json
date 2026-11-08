@@ -1,0 +1,26 @@
+{
+  "clean": {
+    "mode": "real_mpi_collectives_full_proof_replication",
+    "ranks": 4,
+    "blocks": 5,
+    "manifest_hash": "4abb1eae96efcb401717d41d295a6bfc9ec7d048a90ac887dcd7cdc1c7d54d21",
+    "fault": "none",
+    "mean_commit_ms": 1.4171999999916807
+  },
+  "crash": {
+    "mode": "real_mpi_collectives_full_proof_replication",
+    "ranks": 4,
+    "blocks": 5,
+    "manifest_hash": "76f7535f5d362c0bbace9f8ae453cdecf5918e08fff216f48b479e861b6c5a38",
+    "fault": "crash",
+    "mean_commit_ms": 2.839599999924758
+  },
+  "byzantine": {
+    "mode": "real_mpi_collectives_full_proof_replication",
+    "ranks": 4,
+    "blocks": 5,
+    "manifest_hash": "873535ddeed50e746ef4a0f8f00df96a7bb80f5297be4d709f6ff59f64da2941",
+    "fault": "byzantine",
+    "mean_commit_ms": 3.640800000039235
+  }
+}
